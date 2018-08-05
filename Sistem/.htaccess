@@ -1,0 +1,10 @@
+# Activar RewriteEngine
+ RewriteEngine on
+
+#Esta condición es verdadera cuando la ruta al REQUEST_FILENAME no hace referencia a una que existe en el
+ RewriteCond %{REQUEST_FILENAME} !-d
+
+#Esta condición es verdadera cuando la ruta al REQUEST_FILENAME no hace referencia a un archivo que existe en el servidor.
+ RewriteCond %{REQUEST_FILENAME} !-f
+
+ RewriteRule 
